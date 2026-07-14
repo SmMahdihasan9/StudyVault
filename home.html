@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Vault - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>📚 Study Vault</h1>
+    <p>Welcome to your Study Notes</p>
+</header>
+
+<div class="container">
+
+    <!-- Search -->
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search Notes..."
+        onkeyup="searchNotes()">
+
+    <!-- Categories -->
+    <div class="card">
+        <h3>📄 Paragraph</h3>
+        <button onclick="location.href='notes.html?category=Paragraph'">
+            Open
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>📝 Composition</h3>
+        <button onclick="location.href='notes.html?category=Composition'">
+            Open
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>✉️ Letter</h3>
+        <button onclick="location.href='notes.html?category=Letter'">
+            Open
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>📧 Email</h3>
+        <button onclick="location.href='notes.html?category=Email'">
+            Open
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>📖 Grammar</h3>
+        <button onclick="location.href='notes.html?category=Grammar'">
+            Open
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>⭐ Favorite Notes</h3>
+        <button onclick="location.href='favorites.html'">
+            Open
+        </button>
+    </div>
+
+    <button onclick="location.href='add.html'">
+        ➕ Add New Note
+    </button>
+
+    <button onclick="logout()">
+        🚪 Logout
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
